@@ -1,9 +1,15 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class Ex4 {
     public static void main(String[] args) {
         int head = 0;
         int tail = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Who are you?");
+        System.out.print(">");
+        String name = scanner.next();
+        System.out.println("Hello," + name);
         System.out.println("Tossing a coin...");
         for (int i = 0; i < 3; i++) {
             Random rnd = new Random();
